@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Clock, MapPin, ArrowRight, Award } from 'lucide-react';
+import {  Clock, MapPin, ArrowRight, Award } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Internship = () => {
