@@ -123,9 +123,9 @@ const Navbar = () => {
               </motion.a>
             ))}
 
-            {/* Resume Button */}
+            {/* ✅ Desktop Resume Button FIXED */}
             <motion.a
-              href="/resume.html"
+              href="/assets/images/Kalagotla-Beebi-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -157,9 +157,6 @@ const Navbar = () => {
                 borderColor: isDark
                   ? 'rgba(255, 255, 255, 0.2)'
                   : 'rgba(96, 165, 250, 0.3)',
-                boxShadow: isDark
-                  ? '0 4px 20px rgba(96, 165, 250, 0.3)'
-                  : '0 2px 12px rgba(30, 41, 59, 0.08)',
               }}
             >
               {theme === 'dark'
@@ -170,37 +167,20 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-xl border-2 transition-all duration-300"
-              style={{
-                background: isDark
-                  ? 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))'
-                  : 'rgba(255, 255, 255, 0.95)',
-                borderColor: isDark
-                  ? 'rgba(255, 255, 255, 0.2)'
-                  : 'rgba(96, 165, 250, 0.3)',
-              }}
-            >
+            <button onClick={toggleTheme}>
               {theme === 'dark'
-                ? <Sun size={20} className="text-yellow-400" />
-                : <Moon size={20} className="text-slate-600" />}
+                ? <Sun size={20} />
+                : <Moon size={20} />}
             </button>
 
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl transition-colors duration-200"
-              style={{
-                color: isDark ? '#ffffff' : '#0f172a',
-              }}
-            >
+            <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu (UNCHANGED BACKGROUND) */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -220,14 +200,15 @@ const Navbar = () => {
                   key={item.name}
                   href={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="px-4 py-3 rounded-xl text-lg font-semibold text-white transition-all duration-300"
+                  className="px-4 py-3 rounded-xl text-lg font-semibold text-white"
                 >
                   {item.name}
                 </motion.a>
               ))}
 
+              {/* ✅ Mobile Resume Button FIXED */}
               <motion.a
-                href="/resume.html"
+                href="/assets/images/Kalagotla-Beebi-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-3 text-white rounded-xl font-semibold transition-all duration-300"
