@@ -37,7 +37,7 @@ const Internship = () => {
       id: 1,
       title: 'AI & Machine Learning Certification',
       organization: 'IBM SkillsBuild',
-      issued: '2025',
+      issued: '2026',
       credential: 'AICTE Approved',
       credentialLink: '/assets/certfit/aict_ibm_6week.pdf',
       color: '#f472b6',
