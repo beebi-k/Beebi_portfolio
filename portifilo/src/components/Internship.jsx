@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import {  Clock, MapPin, ArrowRight, Award } from 'lucide-react';
+import { Clock, MapPin, ArrowRight, Award } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Internship = () => {
@@ -61,7 +61,7 @@ const Internship = () => {
       credential: 'Industry Recognized',
       credentialLink: '/assets/certfit/Artificial Intelligence & Machine Learning microsoft.pdf',
       color: '#34d399',
-      gradient: 'linear-gradient(135deg, #34d399, #10b981)',
+      gradient: 'linear-gradient(135deg, #f472b6, #ec4899)',
     },
     {
       id: 4,
@@ -120,6 +120,8 @@ const Internship = () => {
         </motion.div>
 
         {/* ================= INTERNSHIPS ================= */}
+
+        {/*
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -191,8 +193,10 @@ const Internship = () => {
             </motion.div>
           ))}
         </motion.div>
+        */}
 
         {/* ================= CERTIFICATIONS ================= */}
+
         <motion.div className="mt-28 text-center">
           <h2
             className="text-5xl md:text-6xl font-bold mb-16"
