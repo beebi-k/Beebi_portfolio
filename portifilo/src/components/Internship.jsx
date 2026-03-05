@@ -53,6 +53,26 @@ const Internship = () => {
       color: '#34d399',
       gradient: 'linear-gradient(135deg, #34d399, #10b981)',
     },
+    {
+      id: 3,
+      title: 'AI & Machine Learning Certification',
+      organization: 'Microsoft Elevate',
+      issued: '2026',
+      credential: 'Industry Recognized',
+      credentialLink: '/assets/certfit/Artificial Intelligence & Machine Learning microsoft.pdf',
+      color: '#34d399',
+      gradient: 'linear-gradient(135deg, #34d399, #10b981)',
+    },
+    {
+      id: 4,
+      title: 'Cloud Administration & Engineering Certification',
+      organization: 'Microsoft Elevate',
+      issued: '2026',
+      credential: 'Industry Recognized',
+      credentialLink: '/assets/certfit/Cloud Administration & Engineering microsoft.pdf',
+      color: '#34d399',
+      gradient: 'linear-gradient(135deg, #34d399, #10b981)',
+    },
   ];
 
   const containerVariants = {

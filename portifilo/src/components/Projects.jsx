@@ -10,6 +10,18 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'Volunteer Opportunity Matching',
+      description:
+        'Developed a full-stack AI-powered volunteer management platform enabling personalized opportunity matching and real-time application status tracking. Implemented interest-based recommendation logic to improve volunteer-organization matching accuracy.Designed a responsive UI with Tailwind CSS ensuring seamless cross-device compatibility..',
+      image: '/assets/images/volunteering_opp.png',
+      techStack: ['React.js', 'Node.js', 'Express.js',' Supabase (PostgreSQL)', 'Tailwind CSS', 'Google Gemini API'],
+      github: 'https://github.com/beebi-k/volunteering_opportunities_backend',
+      demo: 'https://volunteering-opportunities-frontend.vercel.app',
+      color: '#60a5fa',
+      gradient: 'linear-gradient(135deg, #60a5fa, #3b82f6)',
+    },
+    {
+      id: 2,
       title: 'Chronic Kidney Disease Prediction System',
       description:
         'Developed a supervised machine learning system to predict Chronic Kidney Disease (CKD) using structured clinical datasets. The project involved comprehensive data preprocessing, including handling missing values, encoding categorical features, performing feature scaling, and conducting exploratory data analysis to understand data distribution and correlations. Applied feature selection techniques to identify the most significant predictors and improve overall model efficiency. Trained and optimized multiple classification algorithms to enhance predictive performance and ensure model generalization. Evaluated the models using standard performance metrics such as Accuracy, Precision, Recall, F1-Score, and Confusion Matrix to validate reliability and effectiveness in disease prediction.',
@@ -21,7 +33,7 @@ const Projects = () => {
       gradient: 'linear-gradient(135deg, #60a5fa, #3b82f6)',
     },
     {
-      id: 2,
+      id: 3,
       title: 'AI-Powered Resume & Portfolio Generator',
       description:
         'Designed and developed an AI-powered web application that automatically generates professional resumes, cover letters, and personal portfolios based on user inputs. Implemented machine learning-driven logic to analyze user-provided information and generate customized, job-ready content aligned with industry standards. Built an interactive and responsive frontend using React to ensure a seamless and user-friendly experience, focusing on usability, structured content formatting, and real-time preview capabilities.',
@@ -33,13 +45,13 @@ const Projects = () => {
       gradient: 'linear-gradient(135deg, #a78bfa, #8b5cf6)',
     },
     {
-      id: 3,
+      id: 4,
       title: 'AI-Based EV Battery Health & Optimization System',
       description:
         'Developed an AI-driven system to predict battery health, remaining driving range, and overall performance using real-time telemetry and historical data analysis. Implemented machine learning models to optimize charging strategies based on usage patterns and environmental factors, while also recommending nearby charging stations for efficient route planning. Integrated an intelligent AI chatbot to provide battery diagnostics, personalized charging recommendations, performance insights, and trip optimization guidance, enhancing user decision-making and overall system usability.',
-      image: '/assets/images/EV_Battery.jpeg',
+      image: '/assets/images/EV_battery.jpeg',
       techStack: ['React', 'Python', 'Flask', 'TensorFlow', 'PostgreSQL', 'Docker'],
-      github: 'https://github.com/beebi-k/health-prediction',
+      github: 'https://github.com/beebi-k/EV-Charging-Station-Demand-Optimization',
       demo: 'https://EV_Battery.vercel.app',
       color: '#f472b6',
       gradient: 'linear-gradient(135deg, #f472b6, #ec4899)',
