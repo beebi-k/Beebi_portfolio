@@ -1,12 +1,13 @@
+/* eslint-disable no-unused-vars */
+
 import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
+import { Clock, MapPin, ArrowRight, Award } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Internship = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
-  // eslint-disable-next-line no-unused-vars
   const internships = [
     {
       id: 1,
@@ -161,6 +162,36 @@ const Internship = () => {
                 >
                   {internship.company}
                 </p>
+
+                <div
+                  className="space-y-3 text-sm mb-6"
+                  style={{ color: isDark ? '#ffffff' : '#475569' }}
+                >
+                  <div className="flex items-center gap-2">
+                    <MapPin size={18} />
+                    {internship.location}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock size={18} />
+                    {internship.duration}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {internship.stipend}
+                  </div>
+                </div>
+
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => window.open(internship.applyLink, "_blank")}
+                  className="w-full flex items-center justify-center gap-2 px-6 py-4 text-white rounded-xl font-bold shadow-xl"
+                  style={{
+                    background: internship.gradient,
+                  }}
+                >
+                  Apply Now
+                  <ArrowRight size={18} />
+                </motion.button>
               </div>
             </motion.div>
           ))}
