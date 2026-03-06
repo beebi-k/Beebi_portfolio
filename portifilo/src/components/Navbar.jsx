@@ -125,7 +125,7 @@ const Navbar = () => {
 
             {/* ✅ Desktop Resume Button FIXED */}
             <motion.a
-              href="/assets/images/Kalagotla-Beebi-Resume.pdf"
+              href="/assets/images/Kalagotla_Beebi_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.8 }}
