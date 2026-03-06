@@ -208,7 +208,7 @@ const Navbar = () => {
 
               {/* ✅ Mobile Resume Button FIXED */}
               <motion.a
-                href="/assets/images/Kalagotla-Beebi-Resume.pdf"
+                href="/assets/images/Kalagotla_Beebi_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-3 text-white rounded-xl font-semibold transition-all duration-300"
